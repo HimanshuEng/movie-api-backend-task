@@ -79,7 +79,7 @@ springboot-movie-management-api/
 ├── pom.xml
 ├── README.md
 └── LICENSE
-```bash
+```
 
 
 ## 🧾 Item Model (Movie Entity)

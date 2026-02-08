@@ -1,0 +1,10 @@
+com\freelance\movie_api\entity\Movie.class
+com\freelance\movie_api\controller\MovieController.class
+com\freelance\movie_api\dto\MovieResponseDto.class
+com\freelance\movie_api\config\MapperConfig.class
+com\freelance\movie_api\MovieApiApplication.class
+com\freelance\movie_api\controller\StatusController.class
+com\freelance\movie_api\repository\MovieRepository.class
+com\freelance\movie_api\service\MovieService.class
+com\freelance\movie_api\service\impl\MovieServiceImpl.class
+com\freelance\movie_api\dto\MovieRequestDto.class

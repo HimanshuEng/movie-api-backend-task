@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.freelance.movie_api.MovieApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.017 s -- in com.freelance.movie_api.MovieApiApplicationTests

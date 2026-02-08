@@ -34,29 +34,51 @@ This project uses an **in-memory data store (ArrayList)** instead of a database.
 
 ## 📌 Project Structure
 
-movie-api/
+springboot-movie-management-api/
 │
-├── controller/
-│ ├── MovieController.java
-│ ├── StatusController.java
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── freelance/
+│   │   │           └── movie_api/
+│   │   │               │
+│   │   │               ├── controller/
+│   │   │               │   ├── MovieController.java
+│   │   │               │   └── StatusController.java
+│   │   │               │
+│   │   │               ├── dto/
+│   │   │               │   ├── MovieRequestDto.java
+│   │   │               │   └── MovieResponseDto.java
+│   │   │               │
+│   │   │               ├── entity/
+│   │   │               │   └── Movie.java
+│   │   │               │
+│   │   │               ├── repository/
+│   │   │               │   └── MovieRepository.java
+│   │   │               │
+│   │   │               ├── service/
+│   │   │               │   └── MovieService.java
+│   │   │               │
+│   │   │               ├── service/impl/
+│   │   │               │   └── MovieServiceImpl.java
+│   │   │               │
+│   │   │               └── MovieApiApplication.java
+│   │   │
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── static/
+│   │
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── freelance/
+│                   └── movie_api/
 │
-├── dto/
-│ ├── MovieRequestDto.java
-│ ├── MovieResponseDto.java
-│
-├── entity/
-│ ├── Movie.java
-│
-├── repository/
-│ ├── MovieRepository.java
-│
-├── service/
-│ ├── MovieService.java
-│
-├── service/impl/
-│ ├── MovieServiceImpl.java
-│
-└── MovieApiApplication.java
+├── .gitignore
+├── pom.xml
+├── README.md
+└── LICENSE
 
 
 

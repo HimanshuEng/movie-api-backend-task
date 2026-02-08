@@ -33,7 +33,7 @@ This project uses an **in-memory data store (ArrayList)** instead of a database.
 
 
 ## 📌 Project Structure
-
+```bash
 springboot-movie-management-api/
 │
 ├── src/

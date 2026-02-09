@@ -288,6 +288,46 @@ First request after sleep may take 30–60 seconds
 This is normal behavior, not an error
 After waking, API works fast
 
+## 🧪 Testing Live Deployed API Using Postman
+
+All API endpoints were tested using Postman against the live deployed Render URL.
+🔗 Base URL
+https://movie-api-backend-task.onrender.com
+
+⚠️ If the service was sleeping, wait 30–60 seconds for the first response.
+✅ 1. Check Application Status
+GET
+https://movie-api-backend-task.onrender.com/checkstatus
+✅ 2. Add a New Movie 
+POST
+https://movie-api-backend-task.onrender.com/movie
+Body → raw → JSON
+{
+  "title": "KGF",
+  "description": "Action Movie",
+  "genre": "Action",
+  "rating": 5
+}
+✅ 3. Get All Movies
+GET
+https://movie-api-backend-task.onrender.com/movie
+✅ 4. Get Movie By ID
+GET
+https://movie-api-backend-task.onrender.com/movie/1
+✅ 5. Update Movie By ID
+PUT
+https://movie-api-backend-task.onrender.com/movie/1
+Body → raw → JSON
+{
+  "title": "KGF Chapter 2",
+  "description": "Blockbuster Action Movie",
+  "genre": "Action",
+  "rating": 5
+}
+✅ 6. Delete Movie By ID
+DELETE
+https://movie-api-backend-task.onrender.com/movie/1
+
 ## 👨‍💻 Developer
 
 Name: Himanshu  

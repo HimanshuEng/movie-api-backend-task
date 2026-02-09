@@ -271,15 +271,15 @@ ENTRYPOINT ["java","-jar","app.jar"]
 
 ## ⚙️ Steps to Deploy on Render
 
-Push project to GitHub (with Dockerfile in root)
-Go to Render Dashboard → New Web Service
-Connect GitHub repository
-Select Docker as environment
-Click Deploy
-Render automatically:
-Builds Docker image
-Runs Maven build inside container
-Starts Spring Boot app on port 8080
+- Push project to GitHub (with Dockerfile in root)
+- Go to Render Dashboard → New Web Service
+- Connect GitHub repository
+- Select Docker as environment
+- Click Deploy
+- Render automatically:
+- Builds Docker image
+- Runs Maven build inside container
+- Starts Spring Boot app on port 8080
 
 ## 😴 Free Tier Sleep Behavior (Important)
 

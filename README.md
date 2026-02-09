@@ -244,12 +244,53 @@ curl -X GET http://localhost:8080/movie
 - IDs are auto-generated using an internal counter.
 - This project is made for learning REST API concepts and CRUD operations.
 
+## 🚀 Deployment on Render
 
+This Spring Boot API is deployed using Render (Free Web Service) with Docker.
+
+🔗 Live URL
+https://movie-api-backend-task.onrender.com
+
+## 🐳 Docker Configuration
+
+The project uses a multi-stage Docker build to package and run the Spring Boot application.
+Dockerfile
+
+# ---------- Stage 1 : Build ----------
+FROM maven:3.9.6-eclipse-temurin-17 AS builder
+WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
+
+# ---------- Stage 2 : Run ----------
+FROM eclipse-temurin:17-jdk-alpine
+WORKDIR /app
+COPY --from=builder /app/target/*.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","app.jar"]
+
+## ⚙️ Steps to Deploy on Render
+
+Push project to GitHub (with Dockerfile in root)
+Go to Render Dashboard → New Web Service
+Connect GitHub repository
+Select Docker as environment
+Click Deploy
+Render automatically:
+Builds Docker image
+Runs Maven build inside container
+Starts Spring Boot app on port 8080
+
+## 😴 Free Tier Sleep Behavior (Important)
+
+Render free services sleep after 15 minutes of inactivity.
+First request after sleep may take 30–60 seconds
+This is normal behavior, not an error
+After waking, API works fast
 
 ## 👨‍💻 Developer
 
 Name: Himanshu  
 Email : Himanshukashyap6411@gmail.com
-
 Project: Movie REST API (Spring Boot)  
 Purpose: Internship / Backend Developer Task / REST API Practice  

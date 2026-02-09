@@ -295,10 +295,10 @@ All API endpoints were tested using Postman against the live deployed Render URL
 https://movie-api-backend-task.onrender.com
 
 ⚠️ If the service was sleeping, wait 30–60 seconds for the first response.
-✅ 1. Check Application Status
+- ✅ 1. Check Application Status
 GET
 https://movie-api-backend-task.onrender.com/checkstatus
-✅ 2. Add a New Movie 
+- ✅ 2. Add a New Movie 
 POST
 https://movie-api-backend-task.onrender.com/movie
 Body → raw → JSON
@@ -308,13 +308,13 @@ Body → raw → JSON
   "genre": "Action",
   "rating": 5
 }
-✅ 3. Get All Movies
+- ✅ 3. Get All Movies
 GET
 https://movie-api-backend-task.onrender.com/movie
-✅ 4. Get Movie By ID
+- ✅ 4. Get Movie By ID
 GET
 https://movie-api-backend-task.onrender.com/movie/1
-✅ 5. Update Movie By ID
+- ✅ 5. Update Movie By ID
 PUT
 https://movie-api-backend-task.onrender.com/movie/1
 Body → raw → JSON
@@ -324,7 +324,7 @@ Body → raw → JSON
   "genre": "Action",
   "rating": 5
 }
-✅ 6. Delete Movie By ID
+- ✅ 6. Delete Movie By ID
 DELETE
 https://movie-api-backend-task.onrender.com/movie/1
 

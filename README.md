@@ -296,10 +296,10 @@ https://movie-api-backend-task.onrender.com
 
 ⚠️ If the service was sleeping, wait 30–60 seconds for the first response.
 - ✅ 1. Check Application Status
-GET
+GET :
 https://movie-api-backend-task.onrender.com/checkstatus
 - ✅ 2. Add a New Movie 
-POST
+POST :
 https://movie-api-backend-task.onrender.com/movie
 Body → raw → JSON
 {
@@ -309,13 +309,13 @@ Body → raw → JSON
   "rating": 5
 }
 - ✅ 3. Get All Movies
-GET
+GET : 
 https://movie-api-backend-task.onrender.com/movie
 - ✅ 4. Get Movie By ID
-GET
+GET :
 https://movie-api-backend-task.onrender.com/movie/1
 - ✅ 5. Update Movie By ID
-PUT
+PUT :
 https://movie-api-backend-task.onrender.com/movie/1
 Body → raw → JSON
 {
@@ -325,7 +325,7 @@ Body → raw → JSON
   "rating": 5
 }
 - ✅ 6. Delete Movie By ID
-DELETE
+DELETE :
 https://movie-api-backend-task.onrender.com/movie/1
 
 ## 👨‍💻 Developer

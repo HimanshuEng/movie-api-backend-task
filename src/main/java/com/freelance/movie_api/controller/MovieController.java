@@ -53,10 +53,11 @@ public class MovieController {
     // PUT API -> Update movie details by id
     // URL: PUT /movie/{id}
     @PutMapping("{id}")
-    public ResponseEntity<MovieResponseDto> updateMovie(@PathVariable int id,@RequestBody MovieRequestDto movieRequestDto){
+    public ResponseEntity<MovieResponseDto> updateMovie(@PathVariable int id, @Valid @RequestBody MovieRequestDto movieRequestDto){
         return ResponseEntity.ok(movieService.updateMovie(id,movieRequestDto));
     }
 
 
 
 }
+

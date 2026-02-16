@@ -38,7 +38,7 @@ public class MovieServiceImpl implements MovieService {
     public MovieResponseDto getMovieById(int id) {
         Movie movie = movieRepository.findById(id);
         if(movie == null){
-            throw new  IllegalArgumentException("Movie Not Found With Id : "+id);
+            throw new  MovieNotFoundException("Movie Not Found With Id : "+id);
         }
         return modelMapper.map(movie,MovieResponseDto.class);
     }
@@ -70,7 +70,7 @@ public class MovieServiceImpl implements MovieService {
     public MovieResponseDto updateMovie(int id, MovieRequestDto movieRequestDto) {
         Movie existingMovie = movieRepository.findById(id);
         if (existingMovie==null){
-            throw  new IllegalArgumentException("Movie Not Found With Id : "+id);
+            throw  new MovieNotFoundException("Movie Not Found With Id : "+id);
         }
         existingMovie.setTitle(movieRequestDto.getTitle());
         existingMovie.setDescription(movieRequestDto.getDescription());
@@ -80,3 +80,4 @@ public class MovieServiceImpl implements MovieService {
     }
 
 }
+

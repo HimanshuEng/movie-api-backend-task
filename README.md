@@ -10,6 +10,9 @@ This project uses an **in-memory data store (ArrayList)** instead of a database.
 
 ## 🚀 Features
 
+
+✅ Login  
+✅ Register  
 ✅ Add a new movie  
 ✅ Get movie by ID  
 ✅ Get all movies  
@@ -18,6 +21,7 @@ This project uses an **in-memory data store (ArrayList)** instead of a database.
 ✅ In-memory storage using ArrayList  
 ✅ DTO based request/response structure  
 ✅ ModelMapper used for DTO to Entity conversion  
+
 
 
 

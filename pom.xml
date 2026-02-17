@@ -30,7 +30,10 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 86fa909a0d62f6b9ca5feb7c6be4b8fa0ca916c8
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
@@ -41,23 +44,30 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 86fa909a0d62f6b9ca5feb7c6be4b8fa0ca916c8
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc</artifactId>
 		</dependency>
 
 		<dependency>
+<<<<<<< HEAD
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
+=======
+>>>>>>> 86fa909a0d62f6b9ca5feb7c6be4b8fa0ca916c8
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+<<<<<<< HEAD
 
 		<!-- Source: https://mvnrepository.com/artifact/at.favre.lib/bcrypt -->
 		<dependency>
@@ -72,22 +82,30 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+=======
+>>>>>>> 86fa909a0d62f6b9ca5feb7c6be4b8fa0ca916c8
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 86fa909a0d62f6b9ca5feb7c6be4b8fa0ca916c8
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 
 		<dependency>
 			<groupId>jakarta.persistence</groupId>
 			<artifactId>jakarta.persistence-api</artifactId>
 		</dependency>
+=======
+>>>>>>> 86fa909a0d62f6b9ca5feb7c6be4b8fa0ca916c8
 	</dependencies>
 
 	<build>

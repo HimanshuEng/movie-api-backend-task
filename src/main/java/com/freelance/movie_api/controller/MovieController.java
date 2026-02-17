@@ -24,7 +24,7 @@ public class MovieController {
     // POST API -> Add new movie
     // URL: POST /movie
     @PostMapping
-    public ResponseEntity<MovieResponseDto> addMovie(@RequestBody @Valid MovieRequestDto movieRequestDto){
+        public ResponseEntity<MovieResponseDto> addMovie(@RequestBody @Valid MovieRequestDto movieRequestDto){
         return ResponseEntity.status(HttpStatus.CREATED).body(movieService.addMovie(movieRequestDto));
     }
 

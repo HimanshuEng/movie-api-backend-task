@@ -9,6 +9,10 @@ import com.freelance.movie_api.service.MovieService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +34,30 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public MovieResponseDto addMovie(MovieRequestDto movieRequestDto) {
             Movie movie = modelMapper.map(movieRequestDto,Movie.class);
+        // Handle Banner Upload
+        if (movieRequestDto.getBanner() != null &&
+                !movieRequestDto.getBanner().isEmpty()) {
+
+            try {
+                String uploadDir = "uploads/";
+                String fileName = System.currentTimeMillis() + "_" +
+                        movieRequestDto.getBanner().getOriginalFilename();
+
+                Path uploadPath = Paths.get(uploadDir);
+
+                if (!Files.exists(uploadPath)) {
+                    Files.createDirectories(uploadPath);
+                }
+
+                Path filePath = uploadPath.resolve(fileName);
+                Files.write(filePath, movieRequestDto.getBanner().getBytes());
+
+                movie.setBannerUrl("/uploads/" + fileName);
+
+            } catch (IOException e) {
+                throw new RuntimeException("Failed to upload banner");
+            }
+        }
             Movie  saved = movieRepository.save(movie);
             return  modelMapper.map(saved,MovieResponseDto.class);
     }

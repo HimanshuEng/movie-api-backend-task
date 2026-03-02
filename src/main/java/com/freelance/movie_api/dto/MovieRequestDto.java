@@ -4,8 +4,7 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-
-
+import org.springframework.web.multipart.MultipartFile;
 
 
 public class MovieRequestDto {
@@ -28,19 +27,31 @@ public class MovieRequestDto {
     @Max(10)
     private Long rating;
 
+    private MultipartFile banner;
+
     // Default constructor
    public MovieRequestDto() {
     }
 
     // Parameterized constructor
-    public MovieRequestDto(String title, String description, String genre, Long rating) {
+
+
+    public MovieRequestDto(String title, String description, String genre, Long rating, MultipartFile banner) {
         this.title = title;
         this.description = description;
         this.genre = genre;
         this.rating = rating;
+        this.banner = banner;
     }
 
     // Getter and Setter methods
+    public MultipartFile getBanner() {
+        return banner;
+    }
+
+    public void setBanner(MultipartFile banner) {
+        this.banner = banner;
+    }
     public String getTitle() {
         return title;
     }

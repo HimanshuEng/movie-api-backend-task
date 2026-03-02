@@ -8,16 +8,27 @@ public class MovieResponseDto {
     private String description;
     private String genre;
     private Long rating;
-
+    private String bannerUrl;
     public MovieResponseDto() {
     }
-    public MovieResponseDto(int id, String title, String description, String genre, Long rating) {
+
+    public MovieResponseDto(int id, String title, String description, String genre, Long rating, String bannerUrl) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.genre = genre;
         this.rating = rating;
+        this.bannerUrl = bannerUrl;
     }
+
+    public String getBannerUrl() {
+        return bannerUrl;
+    }
+
+    public void setBannerUrl(String bannerUrl) {
+        this.bannerUrl = bannerUrl;
+    }
+
     public int getId() {
         return id;
     }

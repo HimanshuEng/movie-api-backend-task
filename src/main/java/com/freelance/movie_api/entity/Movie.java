@@ -13,48 +13,70 @@ public class Movie {
     private String description;
     private String genre;
     private Long rating;
+    private String bannerUrl;
 
     public Movie() {
     }
 
     // Parameterized constructor
-    public Movie(int id, String title, String description, String genre, Long rating) {
+
+
+    public Movie(int id, String title, String description, String genre, Long rating, String bannerUrl) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.genre = genre;
         this.rating = rating;
+        this.bannerUrl = bannerUrl;
     }
 
     //Getter Setter
+
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public String getTitle() {
         return title;
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
+
     public String getDescription() {
         return description;
     }
+
     public void setDescription(String description) {
         this.description = description;
     }
+
     public String getGenre() {
         return genre;
     }
+
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
     public Long getRating() {
         return rating;
     }
+
     public void setRating(Long rating) {
         this.rating = rating;
+    }
+
+    public String getBannerUrl() {
+        return bannerUrl;
+    }
+
+    public void setBannerUrl(String bannerUrl) {
+        this.bannerUrl = bannerUrl;
     }
 }

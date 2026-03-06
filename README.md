@@ -13,12 +13,12 @@ This project uses an **in-memory data store (ArrayList)** instead of a database.
 
 ✅ Login  
 ✅ Register  
+✅ Role Based Login
 ✅ Add a new movie  
 ✅ Get movie by ID  
 ✅ Get all movies  
 ✅ Update movie by ID  
-✅ Delete movie by ID  
-✅   
+✅ Delete movie by ID   
 ✅ DTO based request/response structure  
 ✅ ModelMapper used for DTO to Entity conversion  
 

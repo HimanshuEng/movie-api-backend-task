@@ -18,7 +18,7 @@ This project uses an **in-memory data store (ArrayList)** instead of a database.
 ✅ Get all movies  
 ✅ Update movie by ID  
 ✅ Delete movie by ID  
-✅ In-memory storage using ArrayList  
+✅   
 ✅ DTO based request/response structure  
 ✅ ModelMapper used for DTO to Entity conversion  
 
@@ -30,10 +30,12 @@ This project uses an **in-memory data store (ArrayList)** instead of a database.
 - Java 17+
 - Spring Boot
 - Spring Web (REST API)
+- Spring Data Jpa
+- Hibernate
+- MYSQL DataBase
 - ModelMapper
 - Maven
-- In-memory storage (ArrayList)
-
+  
 
 
 ## 📌 Project Structure
@@ -90,13 +92,14 @@ springboot-movie-management-api/
 
 Each movie contains the following fields:
 
-| Field        | Type    | Description |
-|-------------|---------|-------------|
-| id          | int     | Unique movie id (auto-generated) |
-| title       | String  | Movie title |
-| description | String  | Movie description |
-| genre       | String  | Movie genre (Action, Comedy, etc.) |
-| rating      | Long    | Movie rating |
+| Field        | Type         | Description |
+|-------------|---------------|-------------|
+| id          | int           | Unique movie id (auto-generated) |
+| title       | String        | Movie title |
+| description | String        | Movie description |
+| genre       | String        | Movie genre (Action, Comedy, etc.) |
+| rating      | Long          | Movie rating |
+| banner      | mutlipartfile | Movie banner |
 
 
 
@@ -244,7 +247,7 @@ curl -X GET http://localhost:8080/movie
 
 ## ⚠️ Important Notes
 
-- This project uses **in-memory storage**, so all data will be deleted when the server restarts.
+- This project uses **MySQL database**, so data will be stored permanently.
 - IDs are auto-generated using an internal counter.
 - This project is made for learning REST API concepts and CRUD operations.
 
